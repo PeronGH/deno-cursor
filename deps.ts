@@ -1,1 +1,2 @@
-export { decode, encode } from "https://deno.land/std@0.83.0/encoding/utf8.ts";
+export const encode = new TextEncoder().encode;
+export const decode = new TextDecoder().decode;
