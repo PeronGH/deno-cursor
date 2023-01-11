@@ -18,15 +18,14 @@ import {
   nextLine,
   position,
   prevLine,
-  RESTORE,
   restore,
-  SAVE,
   save,
   scrollDown,
   scrollUp,
   showCursor,
   write,
 } from "./cursor.ts";
+import { RESTORE, SAVE } from "./constants.ts";
 
 function spy(obj: any, prop: any): any {
   const savedTarget = obj[prop];
